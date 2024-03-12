@@ -86,7 +86,7 @@ val Typography = Typography(
    val caption = TextStyle(
     fontFamily = MarkaziRegular,
     fontWeight = FontWeight.Normal,
-    fontSize = 16.sp
+    fontSize = 18.sp
     )
 
    val button = TextStyle(

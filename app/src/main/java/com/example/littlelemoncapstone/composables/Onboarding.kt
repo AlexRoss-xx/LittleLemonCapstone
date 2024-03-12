@@ -41,6 +41,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -144,7 +145,7 @@ fun Onboarding (navController: NavHostController){
                     OutlinedTextField(
                         value = firstName,
                         onValueChange = { firstName = it },
-                        label = { Text("First name") },
+                        label = { Text("First name", modifier = Modifier, fontWeight = FontWeight.Light, color = Color.LightGray) },
                         singleLine = true,
                         modifier = Modifier
                             .fillMaxWidth()
@@ -164,7 +165,7 @@ fun Onboarding (navController: NavHostController){
                     OutlinedTextField(
                         value = lastName,
                         onValueChange = { lastName = it },
-                        label = { Text("Last name") },
+                        label = { Text("Last name", modifier = Modifier, fontWeight = FontWeight.Light, color = Color.LightGray) },
                         singleLine = true,
                         modifier = Modifier
                             .fillMaxWidth()
@@ -184,7 +185,7 @@ fun Onboarding (navController: NavHostController){
                     OutlinedTextField(
                         value = email,
                         onValueChange = { email = it },
-                        label = { Text("Email") },
+                        label = { Text("Email", modifier = Modifier, fontWeight = FontWeight.Light, color = Color.LightGray) },
                         singleLine = true,
                         keyboardOptions = KeyboardOptions.Default.copy(
                             keyboardType = KeyboardType.Email,
