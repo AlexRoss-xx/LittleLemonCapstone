@@ -22,6 +22,12 @@ val MarkaziRegular = FontFamily(
 
 // Set of Material typography styles to start with
 val Typography = Typography(
+    displayMedium = TextStyle(
+        fontFamily = MarkaziRegular,
+        fontSize = 57.sp,
+        fontWeight = FontWeight.Medium,
+        color = LittleLemonColor.charcoal
+    ),
     bodyLarge = TextStyle(
         fontFamily = MarkaziRegular,
         fontSize = 26.sp,
@@ -30,8 +36,8 @@ val Typography = Typography(
     ),
     titleLarge = TextStyle(
         fontFamily = KarlaRegular,
-        fontWeight = FontWeight.Normal,
-        fontSize = 22.sp,
+        fontWeight = FontWeight.Light,
+        fontSize = 24.sp,
         lineHeight = 28.sp,
         letterSpacing = 0.sp
     ),
@@ -89,6 +95,13 @@ val Typography = Typography(
     fontSize =18.sp,
        letterSpacing = 0.1.em
    )
+
+   val secondaryButton = TextStyle(
+    fontFamily = KarlaRegular,
+    fontWeight = FontWeight.Bold,
+    fontSize =16.sp,
+    letterSpacing = 0.1.em
+)
 
 // Usage of the custom text styles in your Compose UI
 @Composable
